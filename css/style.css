@@ -1,0 +1,141 @@
+
+/* Additional styles for contact.html */
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.contact-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.contact-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.contact-card p {
+    margin-bottom: 10px;
+}
+
+.contact-card .small-text {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 15px;
+}
+
+.contact-card a.btn-secondary {
+    margin-top: 20px;
+}
+
+.contact-hours-map {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start; /* Align top of content */
+}
+
+.contact-hours {
+    flex: 1 1 300px; /* Adjust width as needed */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.contact-hours h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.contact-hours p {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.contact-map {
+    flex: 2 1 500px; /* Map takes more space */
+    min-height: 350px; /* Ensure map has a minimum height */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .contact-info-grid,
+    .contact-hours-map {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-card,
+    .contact-hours,
+    .contact-map {
+        width: 100%;
+        max-width: 450px; /* Limit width on smaller screens */
+    }
+}/* Additional styles for services.html */
+.service-category {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.service-category h3 {
+    color: var(--primary-color);
+    font-size: 2em;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.service-category .service-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.service-category p {
+    margin-bottom: 15px;
+}
+
+.service-category ul {
+    list-style-type: none; /* Remove default bullet */
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.service-category ul li {
+    background: url('../img/checkmark-icon.png') no-repeat left center; /* Custom checkmark icon */
+    background-size: 20px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+/* You'll need a checkmark-icon.png in your img folder for the list items */
+/* Or you can use a font-awesome icon if you prefer (but that's an external library) */
+/* Example for simple bullet point:
+.service-category ul li {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+*/
